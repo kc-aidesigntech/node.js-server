@@ -160,11 +160,13 @@ Code
  Output
 [PM2] Starting /home/ayo/dev/demo/dadjokes/server.js in fork_mode (1 instance)
 [PM2] Done.
-┌─────┬─────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
-│ id  │ name        │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
-├─────┼─────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
-│ 0   │ dadjokes    │ default     │ 1.0.0   │ fork    │ 18529    │ 1s     │ 0    │ online    │ 0%       │ 57.4mb   │ ayo      │ disabled │
-└─────┴─────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+Code
+    
+    ┌─────┬─────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+    │ id  │ name        │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+    ├─────┼─────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+    │ 0   │ dadjokes    │ default     │ 1.0.0   │ fork    │ 18529    │ 1s     │ 0    │ online    │ 0%       │ 57.4mb   │ ayo      │ disabled │
+    └─────┴─────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
 By default, if the ready signal isn't received, PM2 will wait for three seconds before designating your application as online. If you wish to adjust this duration, you can use the --listen-timeout flag followed by the desired timeout in milliseconds:
 
  
@@ -181,11 +183,13 @@ pm2 list
 You should observe the following output:
 
  Output
-┌─────┬─────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
-│ id  │ name        │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
-├─────┼─────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
-│ 0   │ dadjokes    │ default     │ 1.0.0   │ fork    │ 18529    │ 3m     │ 0    │ online    │ 0%       │ 53.3mb   │ ayo      │ disabled │
-└─────┴─────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+ Code
+ 
+    ┌─────┬─────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+    │ id  │ name        │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+    ├─────┼─────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+    │ 0   │ dadjokes    │ default     │ 1.0.0   │ fork    │ 18529    │ 3m     │ 0    │ online    │ 0%       │ 53.3mb   │ ayo      │ disabled │
+    └─────┴─────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
 This command provides a snapshot of each application's status, uptime, memory usage, and more. If you have multiple applications running, you can sort them based on specific metrics:
 
  
