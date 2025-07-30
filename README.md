@@ -5,11 +5,12 @@ Establishing a Node.js server involves a few fundamental steps, whether you're b
 Download and install Node.js from the official website (nodejs.org). This installation typically includes npm (Node Package Manager) as well.
 Verify the installation by opening your terminal or command prompt and running: 
 Code
-
+    ~~~
     node -v
     npm -v
+    ~~~
 This should display the installed versions.
-2. Create Your Project:
+3. Create Your Project:
 Create a new directory for your project and navigate into it using your terminal: 
 Code
 
@@ -19,7 +20,7 @@ Initialize a new Node.js project, which creates a package.json file to manage pr
 Code
 
     npm init -y
-3. Choose Your Server Approach:
+4. Choose Your Server Approach:
 Simple HTTP Server (Core Node.js): For basic server functionality without external dependencies.
 Create a file (e.g., server.js) and add the following code: 
 JavaScript
