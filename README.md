@@ -117,11 +117,13 @@ You should see the following output:
  Output
 [PM2] Starting /home/ayo/dev/demo/dadjokes/server.js in fork_mode (1 instance)
 [PM2] Done.
-┌─────┬─────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
-│ id  │ name        │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
-├─────┼─────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
-│ 0   │ dadjokes    │ default     │ 1.0.0   │ fork    │ 1658     │ 0s     │ 0    │ online    │ 0%       │ 18.3mb   │ ayo      │ disabled │
-└─────┴─────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+Code
+
+    ┌─────┬─────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+    │ id  │ name        │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+    ├─────┼─────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+    │ 0   │ dadjokes    │ default     │ 1.0.0   │ fork    │ 1658     │ 0s     │ 0    │ online    │ 0%       │ 18.3mb   │ ayo      │ disabled │
+    └─────┴─────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
 This table confirms the successful background launch of the dadjokes application. If your terminal window is compact, you might see fewer columns, so consider expanding it for a comprehensive view.
 
 Here's a breakdown of the table columns:
@@ -192,24 +194,22 @@ You should observe the following output:
     └─────┴─────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
 This command provides a snapshot of each application's status, uptime, memory usage, and more. If you have multiple applications running, you can sort them based on specific metrics:
 
- 
+ Code
 
-pm2 list --sort [name|id|pid|memory|cpu|status|uptime][:asc|desc]
+    pm2 list --sort [name|id|pid|memory|cpu|status|uptime][:asc|desc]
 As in:
-
+Code
  
-
-pm2 list --sort memory:desc
+    pm2 list --sort memory:desc
 For a more detailed look at a specific application, use the pm2 show command followed by the application's name or id:
-
+Code
  
-
-pm2 show dadjokes
+    pm2 show dadjokes
 [s/t]
 
 For a live dashboard displaying metrics, metadata, and application logs, use:
 
- 
+Code
 
-pm2 monit
+    pm2 monit
 Screenshot of pm2 monit in action
